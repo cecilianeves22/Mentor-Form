@@ -1,0 +1,125 @@
+ <html>
+  
+<head>
+
+    <title>Formulário Mentor</title>
+</head>
+
+<body> 
+    <img src='Imagens HTML/logo.png' alt='logo' title='logo' height='50'/>
+    
+    <h2>Bem-vindo ao Grupo 17</h2>
+    <form> 
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <table>
+                <tr>
+                    <td>
+                        <label for='nome' >Nome:</label>
+                        <input type= 'text'name= 'nome' id='nome' required />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for='endereco' >Endereço:</label> 
+                        <input type='text' name='endereco' id='endereco' required />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for='email' >E-mail:</label>
+                        <input type= 'email' name='email' id='email' required />
+                    </td>
+                </tr>
+
+            <tr>
+                <td>
+                    <label for='telefone'>Telefone:</label>
+                    <input type='tel' name='telefone' id='telefone' required/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for='dataDeNascimento'>Data de Nascimento:</label>
+                    <input type='date' name='dataDeNascimento' id='date' required/> 
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <lable for='Cidade'>Cidade:</lable>
+                    <input type='text' name='cidade' id='cidade' required/>
+                </td>
+            </tr>
+            <tr>
+                <td> 
+                    <lable for='Estado'>Estado</lable>
+                    <input type= 'text' name='estado' id='estado' required/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <lable for='Escolaridade'>Escolaridade</lable>
+                    <select name='escolaridade' id='escolaridade'>
+                        <option value='em'>Ensino Médio</option>
+                        <option value='sg'>Superior (Graduação)</option>
+                        <option value='pg'>Pós Graduação</option>
+                        <option value='m'>Mestrado</option>
+                        <option value='d'>Doutorado</option>
+                    </select>
+                </td>
+            </tr>
+            </table>
+        </fieldset>
+
+            <fieldset>
+                <legend>Sobre o Instituto</legend>
+                <table>
+                    <tr>
+                        <td>
+                            <label for='comoConheceuInstituto'>Como conheceu o Instituto?</label>
+                            <input type='checkbox' name='interesse' value='1' checked/> Instagram 
+                            <input type='checkbox' name='interesse' value='1' checked/> Facebook 
+                            <input type='checkbox' name='interesse' value='1' checked/> Linkedin 
+                            <input type='checkbox' name='interesse' value='1' checked/> TV
+                            <input type='checkbox' name='interesse' value='1' checked/> Outros
+                        </td>
+                    </tr>
+                    <tr> 
+                        <td> 
+                            <p> Por que teve interesse pelo Instituto?: <textarea name="pq" id="pq" cols="20" rows="5"></textarea></p>
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+
+            <fieldset>
+                <legend>Perfil</legend>
+                <table>
+                    <tr>
+                        <td>
+                            <label for='qntsAnosProfissão'>Quantos anos já atua como mentor?</label>
+                            <input type= 'number' name='qntsAnosProfissão' id='qntsAnosProfissão'/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                             <p> Pontos fortes: <textarea name='pontosFortes' id='pontosFortes' cols='20' rows='5'></textarea></p>
+                             <p> Pontos fracos: <textarea name='pontosFracos' id='pontosFracos' cols='20' rows='5'></textarea></p>
+                     </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p> Conte um pouco sobre você (hobbies, inspirações, objetivos...): <textarea name='sobreVocê' id='sobreVocê'cols='20' rows='5'></textarea></p> 
+                            </td>
+                         </tr>
+                    </table>
+            </fieldset>
+            <tr>
+                <td>
+                    <input type="submit" value="Enviar"> 
+                </td>
+            </tr>
+    </form>
+</body>
+
+</html>
